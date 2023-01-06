@@ -1,9 +1,16 @@
 <html>
-<h1> text </h1>
-<form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname">
-</form>
+<script>
+function check()
+  {
+    document.getElementById('f1').innerHTML = document.myform.name.value;
+  }
+  </script>
+  
+  <form name='myform'>
+  <p>Bid Amount
+  <input type = 'text' name='bid' value =''>
+  <p><input type = 'submit' onclick='check(); return false'></p>
+  </p>
+  </form>
+  
 </html>
